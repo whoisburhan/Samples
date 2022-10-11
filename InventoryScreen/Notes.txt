@@ -1,0 +1,5 @@
+Added Mocked Class:
+_______________________
+
+1.  MockedVerticalSlide.cs [TO Get the rectTranform Of verrticalSlide]
+2. MockedCardSortButton.cs [To get the sort button and text reference]
