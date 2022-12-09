@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b01fc9d9d932940a47b70738b4727d, type: 3}
+  m_Name: 1.NormalBow
+  m_EditorClassIdentifier: 
+  generalInfo:
+    Name: NORMAL BOW
+    displayImg: {fileID: 21300000, guid: c0ca2184c18bb56499c90f2639c31633, type: 3}
+    protraitImg: {fileID: 0}
+    itemType: 2
+  shopData:
+    Price: 0
+    itemStatus: 1
+  gameBenifits:
+    Attack: 3
+    projectileType: 2
+  characterViwerData:
+    Path: Bow 01
+    Color1: {r: 0.6745098, g: 0.627451, b: 0.47058824, a: 1}
+    Color2: {r: 0.9529412, g: 0.9019608, b: 0.76862746, a: 1}
+    Color3: {r: 1, g: 1, b: 1, a: 1}

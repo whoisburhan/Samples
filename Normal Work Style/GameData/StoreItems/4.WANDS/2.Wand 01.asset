@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b01fc9d9d932940a47b70738b4727d, type: 3}
+  m_Name: 2.Wand 01
+  m_EditorClassIdentifier: 
+  generalInfo:
+    Name: Wand 01
+    displayImg: {fileID: 21300000, guid: 14a3fc52630b01a4aa282bfca47667dc, type: 3}
+    protraitImg: {fileID: 0}
+    itemType: 3
+  shopData:
+    Price: 700
+    itemStatus: 0
+  gameBenifits:
+    Attack: 7
+  characterViwerData:
+    Path: Wand 01
+    Color1: {r: 0.1764706, g: 0.17254902, b: 0.17254902, a: 1}
+    Color2: {r: 0.07058824, g: 0.08235294, b: 0.2901961, a: 1}
+    Color3: {r: 1, g: 1, b: 1, a: 1}

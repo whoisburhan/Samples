@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fd8659e77eecd24a93e02b6f0cea20e, type: 3}
+  m_Name: Store Data
+  m_EditorClassIdentifier: 
+  Outfits:
+  - {fileID: 11400000, guid: f53928d059d2c9a44836fd4553a0bb2c, type: 2}
+  - {fileID: 11400000, guid: 41cea8ac34d112b42a54d2279d278dbb, type: 2}
+  - {fileID: 11400000, guid: a53d1017ee826df4ea918ecf579364b6, type: 2}
+  - {fileID: 11400000, guid: 61f48fd437c965241914ab7015ae7a1f, type: 2}
+  Swords:
+  - {fileID: 11400000, guid: 42c4442e9634fbb479136e39e77baf81, type: 2}
+  - {fileID: 11400000, guid: 85a3c35234d5e0345bfa1427ef50c2f3, type: 2}
+  - {fileID: 11400000, guid: 50f23c25c16a27c4882b40fb5184cba6, type: 2}
+  - {fileID: 11400000, guid: 309a6553337c3ad4ca3275a0c55231a0, type: 2}
+  - {fileID: 11400000, guid: 0fd48de65d8d7a64d9ad4c9da1207505, type: 2}
+  Bows:
+  - {fileID: 11400000, guid: 0082134017e0026489f982d6af765b09, type: 2}
+  - {fileID: 11400000, guid: 0dc033dabd27b8c4a8a2ed3b1003959c, type: 2}
+  - {fileID: 11400000, guid: 6608d97c21cd359409d1e03a9d8dcfd9, type: 2}
+  Wands:
+  - {fileID: 11400000, guid: 259d0645d14c1ac409ee126f5c34325e, type: 2}
+  - {fileID: 11400000, guid: f7390b7902d9bd24899e8c0ee2a825dc, type: 2}
+  - {fileID: 11400000, guid: 222c02a486ce1174a99a0ad12c6b2a43, type: 2}
+  - {fileID: 11400000, guid: 732b05f710c7a864e8380e51ecdaf3d2, type: 2}
+  - {fileID: 11400000, guid: 6fb3423b23eaaa24aa4567466526933a, type: 2}
+  Mermaids: []

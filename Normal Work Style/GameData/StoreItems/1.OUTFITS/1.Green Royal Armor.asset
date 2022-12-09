@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1b01fc9d9d932940a47b70738b4727d, type: 3}
+  m_Name: 1.Green Royal Armor
+  m_EditorClassIdentifier: 
+  generalInfo:
+    Name: GREEN ROYAL ARMOR
+    displayImg: {fileID: 21300000, guid: 9ee511d5451e31140adf9968c4e1ecb5, type: 3}
+    protraitImg: {fileID: 21300000, guid: a44d12e54ce38d94b997d3928aec9a3e, type: 3}
+    itemType: 0
+  shopData:
+    Price: 0
+    itemStatus: 1
+  gameBenifits:
+    Attack: 5
+    projectileType: -1
+  characterViwerData:
+    Path: WHITE_GREEN
+    Color1: {r: 0, g: 0, b: 0, a: 0}
+    Color2: {r: 0, g: 0, b: 0, a: 0}
+    Color3: {r: 0, g: 0, b: 0, a: 0}
