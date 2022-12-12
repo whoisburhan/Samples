@@ -25,5 +25,10 @@ namespace GS.FanstayWorld2D.Enemy
         {
             animator.SetInteger(emeyAnimationState, (int)state);
         }
+
+        public void UpdateAnimatorController(AnimatorOverrideController controller)
+        {
+            animator.runtimeAnimatorController = controller;
+        }
     }
 }

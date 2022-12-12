@@ -10,14 +10,14 @@ namespace GS.FanstayWorld2D.Enemy
 {
     public enum EnemyState
     {
-        NONE, IDLE, PATROL, CHASE, ATTACK_SHORT_RANGE, ATTACK_LONG_RANGE, HURT, DIE
+        NONE, IDLE, PATROL, CHASE, ATTACK_SHORT_RANGE, ATTACK_LONG_RANGE, HURT, DIE, JUMP, FLY
     }
 
     [RequireComponent(typeof(Animator), typeof(AudioSourceScript), typeof(SpriteRenderer))]
     public class Enemy : MonoBehaviour
     {
         [Header("Enemy Attributes")]
-        private EnemySpecies enemySpecies;
+        [SerializeField] private EnemySpecies enemySpecies;
         private ISensor enemySensor;
         private IPatrol enemyPetrol;
         private IEnmeyAnimation enmeyAnimation;
@@ -97,7 +97,7 @@ namespace GS.FanstayWorld2D.Enemy
                             }
 
                             var targetPosition = enemySensor.CheckEnemeyDetectZoneSensor(transform.position);
-                            
+
                             if (targetPosition != null)
                                 transform.position = enemyPetrol.Chasing(transform.position, targetPosition.position);
                         }
@@ -188,16 +188,18 @@ namespace GS.FanstayWorld2D.Enemy
         private void Init()
         {
             // Dummy Value For the test
-            enemeyHealth.SetHealth(20, 20);
+            var enemyInfo = EnemyContainer.Instance.GetEnemyInfo(enemySpecies);
+            
+            enemeyHealth.SetHealth(enemyInfo.enemyMaxHealth,enemyInfo.enemyMaxHealth);
+
+            enmeyAnimation.UpdateAnimatorController(enemyInfo.controller);
+
+            canPetrol = enemyInfo.canPerol;
+            canChase = enemyInfo.canChase;
+
             canCheckState = true;
-            canPetrol = true;
-            canChase = true;
         }
     }
-
-
-
-
 
     public enum EnemyAttackType
     {
@@ -206,6 +208,6 @@ namespace GS.FanstayWorld2D.Enemy
 
     public enum EnemySpecies
     {
-        SKELTON
+        SKELTON, VAMPIRE_MALE, VAMPIRE_MALE_2
     }
 }
