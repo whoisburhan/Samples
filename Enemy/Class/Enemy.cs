@@ -8,30 +8,31 @@ using GS.FanstayWorld2D.Projectile;
 
 namespace GS.FanstayWorld2D.Enemy
 {
-    public enum EnemyState
-    {
-        NONE, IDLE, PATROL, CHASE, ATTACK_SHORT_RANGE, ATTACK_LONG_RANGE, HURT, DIE, JUMP, FLY
-    }
 
     [RequireComponent(typeof(Animator), typeof(AudioSourceScript), typeof(SpriteRenderer))]
     public class Enemy : MonoBehaviour
     {
-        [Header("Enemy Attributes")]
-        [SerializeField] private EnemySpecies enemySpecies;
         private ISensor enemySensor;
         private IPatrol enemyPetrol;
         private IEnmeyAnimation enmeyAnimation;
         private IHealth enemeyHealth;
+
         private Animator animator;
+
+
+        [Header("Enemy Attributes")]
+        private EnemySpecies enemySpecies;
         private EnemyState currentState;
         private EnemyAttackType enemyAttackType;
         private ProjectileType projectileType;
+
+
         private bool canCheckState = true;
         private bool canPetrol = true, canChase;
         private int attackPower = 10; // just for taste purpose
         private Vector2 projectileSpawnPointOffset;
 
-        #region Unity Default Functions
+        #region Unity Core Functions
         private void Awake()
         {
             enemeyHealth = GetComponent<IHealth>();
@@ -58,7 +59,7 @@ namespace GS.FanstayWorld2D.Enemy
 
         #endregion
 
-        #region Unity Deafult's Alternatives Fuctions
+        #region Events Fuctions
         protected virtual void OnAwakeCall() { }
         protected virtual void OnStartCall()
         {
@@ -201,13 +202,4 @@ namespace GS.FanstayWorld2D.Enemy
         }
     }
 
-    public enum EnemyAttackType
-    {
-        SHORT_RANGE, LONG_RANGE, BOTH
-    }
-
-    public enum EnemySpecies
-    {
-        SKELTON, VAMPIRE_MALE, VAMPIRE_MALE_2
-    }
 }

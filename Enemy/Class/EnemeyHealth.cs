@@ -4,9 +4,9 @@ namespace GS.FanstayWorld2D.Enemy
 {
    public class EnemeyHealth : MonoBehaviour, IHealth
     {
-        private int health, maxHealth;
+        private IHealthBarBehaviour healthUI;
 
-        private HealthBarBehaviour healthUI;
+        private int health, maxHealth;
 
         public EnemeyHealth(HealthBarBehaviour healthUI)
         {

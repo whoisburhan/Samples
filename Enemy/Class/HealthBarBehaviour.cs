@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace GS.FanstayWorld2D.Enemy
 {
-    public class HealthBarBehaviour : MonoBehaviour
+    public class HealthBarBehaviour : MonoBehaviour, IHealthBarBehaviour
     {
         [SerializeField] private Slider slider;
         [SerializeField] private Image fillImg;
@@ -14,7 +12,7 @@ namespace GS.FanstayWorld2D.Enemy
         [SerializeField] private Vector3 offset;
 
 
-        public void SetHealth(float health, float maxHealth)
+        public void UpdateHealthInUI(float health, float maxHealth)
         {
             slider.gameObject.SetActive(health < maxHealth && health > 0);
             slider.value = health;
